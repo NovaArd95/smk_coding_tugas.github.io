@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Delivery Dashboard</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+         body {
+            background: linear-gradient(to bottom, rgba(235, 171, 75, 0.8) 25%, rgba(255, 255, 255, 0.5) 0%);
+        }
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 35%;
+            height: 35%;
+            z-index: -1; /* Mengatur kedalaman gambar agar berada di belakang konten lainnya */
+        }
+        .btn-custom {
+            background-color: #ffffff;
+            border: 2px solid #f3cd50; /* warna kuning */
+            color: #f3cd50; /* warna teks kuning */
+        }
+
+        .btn-custom:hover {
+            background-color: #f3cd50; /* warna kuning ketika hover */
+            color: #ffffff; /* warna teks putih ketika hover */
+        }
+    
+        .rating {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(255, 255, 255, 0.904);
+            color: #000000;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .rating-score {
+            margin-right: 5px;
+        }
+
+        .rating img {
+            width: 20px; /* Sesuaikan ukuran ikon bintang */
+            height: auto;
+        }
+
+        .card-img-overlay {
+            padding: 0;
+        }
+        .image-container {
+            display: flex;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            margin-right: 10px; /* Menambahkan jarak antar gambar */
+        }
+        
+    </style>
+</head>
+<body>
+    <img src="bg-hero-2.png" class="background-image" alt="Background Image">
+    <div class="container mt-5">
+        <h2>Popular Now</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="product-1.png" class="card-img-top" alt="Vanilla Latte">
+                    <div class="card-img-overlay">
+                        <div class="rating">
+                            <span class="rating-score">4.5</span>
+                            <img src="gold-star.svg" alt="Rating Icon"> <!-- Menambahkan gambar ikon rating -->
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Vanilla Latte   21K</h5>
+                        <p class="card-text">
+                            <button class="btn btn-custom mr-2">Hot</button>
+                            <button class="btn btn-custom mr-md-5">Cold</button>
+                            <img src="dark-cart.svg" alt="Add to Cart">
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="product-2.png" class="card-img-top" alt="Vanilla Latte">
+                    <div class="card-img-overlay">
+                        <div class="rating">
+                            <span class="rating-score">4.4</span>
+                            <img src="gold-star.svg" alt="Rating Icon"> <!-- Menambahkan gambar ikon rating -->
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Expresso    12K </h5>
+                        <p class="card-text">
+                            <button class="btn btn-custom mr-2">Hot</button>
+                            <button class="btn btn-custom mr-md-5">Cold</button>
+                            <img src="dark-cart.svg" alt="Add to Cart">
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="product-3.png" class="card-img-top" alt="Vanilla Latte">
+                    <div class="card-img-overlay">
+                        <div class="rating">
+                            <span class="rating-score">4.8</span>
+                            <img src="gold-star.svg" alt="Rating Icon"> <!-- Menambahkan gambar ikon rating -->
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Hazelnut Latte   23K</h5>
+                        <p class="card-text">
+                        <button class="btn btn-custom mr-2">Hot</button>
+                        <button class="btn btn-custom mr-md-5">Cold</button> <!-- Tambahkan class "mr-md-2" untuk margin kanan hanya pada tampilan medium dan lebih besar -->
+                        <img src="dark-cart.svg" alt="Add to Cart">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container mt-8">
+        <h2> How to use delivery service</h2><br><br>
+        <div class="row justify-content-center">
+            <div class="col-md-4" style="max-width: 200px; margin-right: 80px;">
+                <img src="service-1.png" alt="Gambar 1" style="width: 100%;" class="img-fluid rounded">
+                <div class="text-center mt-2">
+                    <h5 style="color: black; font-weight: bold;">Choose your coffee</h5>
+                    <p>There are 20+ coffees for you</p>
+                </div>
+            </div>
+            <div class="col-md-4" style="max-width: 200px; margin-right: 80px;">
+                <img src="service-2.png" alt="Gambar 2" style="width: 100%;" class="img-fluid rounded">
+                <div class="text-center mt-2">
+                    <h5 style="color: black; font-weight: bold;">We delivery it to you</h5>
+                    <p>Choose delivery service</p>
+                </div>
+            </div>
+            <div class="col-md-4" style="max-width: 200px;">
+                <img src="service-3.png" alt="Gambar 3" style="width: 100%;" class="img-fluid rounded">
+                <div class="text-center mt-2">
+                    <h5 style="color: black; font-weight: bold;">Enjoy your cofee</h5>
+                    <p>Choose delivery service</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+<!-- Optional: JavaScript for Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
